@@ -59,8 +59,8 @@
 				<div class="login-content">
 					<form action="index.html" method="GET">
 						<div class="form-floating mb-20px">
-							<input type="text" class="form-control fs-13px h-45px border-0" placeholder="Email Address" id="emailAddress" />
-							<label for="emailAddress" class="d-flex align-items-center text-gray-600 fs-13px">Email Address</label>
+							<input type="text" class="form-control fs-13px h-45px border-0" placeholder="ID" id="emailAddress" />
+							<label for="emailAddress" class="d-flex align-items-center text-gray-600 fs-13px">ID</label>
 						</div>
 						<div class="form-floating mb-20px">
 							<input type="password" class="form-control fs-13px h-45px border-0" placeholder="Password" />
@@ -76,7 +76,7 @@
 							<button type="submit" class="btn btn-theme d-block w-100 h-45px btn-lg">Sign me in</button>
 						</div>
 						<div class="text-gray-500">
-							Not a member yet? Click <a href="javascript:;" class="text-white">here</a> to register.
+							Not a member yet? Click <a href="{% url 'register' %}" class="text-white">here</a> to register.
 						</div>
 					</form>
 				</div>
