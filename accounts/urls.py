@@ -3,7 +3,7 @@ from . import views
 
 # CBV
 urlpatterns = [
-    path('',views.index), 
-    path('register/', views.register, name='register'),
+    path('',views.login_view, name='login-view'), 
+    path('register/', views.register_view, name='register'),
     # path('<int:pk>/',views.PostDetail.as_view()),
 ]

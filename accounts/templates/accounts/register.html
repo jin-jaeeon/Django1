@@ -1,1 +1,28 @@
-fgafasfdasdfsafdasfdsafsadfasdfas
+{% extends 'accounts/base.html' %}
+
+{% block form_content %}
+	<form action="" method="POST">
+		<div class="form-floating mb-20px">
+			<input type="text" class="form-control fs-13px h-45px border-0" placeholder="ID" id="emailAddress" />
+			<label for="emailAddress" class="d-flex align-items-center text-gray-600 fs-13px">ID</label>
+		</div>
+		<div class="form-floating mb-20px">
+			<input type="password" class="form-control fs-13px h-45px border-0" placeholder="Password" />
+			<label for="emailAddress" class="d-flex align-items-center text-gray-600 fs-13px">Password</label>
+		</div>
+		<div class="form-floating mb-20px">
+			<input type="password" class="form-control fs-13px h-45px border-0" placeholder="Password 확인" />
+			<label for="emailAddress" class="d-flex align-items-center text-gray-600 fs-13px">Password 확인</label>
+		</div>
+		<div class="form-floating mb-20px">
+			<input type="email" class="form-control fs-13px h-45px border-0" placeholder="Email" />
+			<label for="emailAddress" class="d-flex align-items-center text-gray-600 fs-13px">Email</label>
+		</div>
+		<div class="mb-20px">
+			<button type="submit" class="btn btn-theme d-block w-100 h-45px btn-lg">회원가입</button>
+		</div>
+		<div class="text-gray-500">
+			<a href="{% url 'login-view' %}" class="text-white">로그인</a>
+		</div>
+	</form>
+{% endblock %}
